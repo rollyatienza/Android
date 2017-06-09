@@ -80,6 +80,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 // TODO: Implement successful signup logic here
                 // By default we just finish the Activity and log them in automatically
+
+
                 this.finish();
             }
         }
@@ -92,11 +94,10 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onLoginSuccess() {
-        _loginButton.setEnabled(true);
-
-        Intent intent = new Intent(this,MainActivity.class);
+        //_loginButton.setEnabled(true);
+        //After authentication
+        Intent intent = new Intent(this,EventActivity.class);
         startActivity(intent);
-
         finish();
     }
 

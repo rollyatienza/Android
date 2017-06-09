@@ -37,5 +37,23 @@ dependencies {
     //compile 'com.mcxiaoke.volley:library-aar:1.0.15'
 
     //Volley: www.technoburgh.com/android/android-studio-volley
-    //compile 'com.android.vollery:volley:1.0.0'
+    /*
+        1. get the volley source code
+            git clone https://android.googlesource.com/platform/frameworks/volley
+        2. Include volley as a module inside your current Android project
+            * File-> New Module
+            * Choose 'Import Existing Project'
+            * After clicking next, select the direcory called 'volley' where you checked out the volley project from step one
+        3. Volley folder should now show up as one of the projects in your app
+        4. Update your project config so that Volley is a module that your main project module is dependent upon
+            * The "settings.gradle" file should contain your main app module name and also
+                the volley module you have just added.
+                include ':app', ':volley'
+            * In your "build.gradle(Module: app)
+                compile project(':volley')
+     */
+    compile project(':volley')
+
+    //Recyclerview
+    compile 'com.android.support:recyclerview-v7:25.1.0'
 }

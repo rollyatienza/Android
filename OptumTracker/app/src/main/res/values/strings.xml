@@ -14,4 +14,9 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <!-- Strings related to API -->
+    <string name="apiURL">http://www.mydashboardgroup.com/api</string>
+    <string name="apiEvents">http://www.mydashboardgroup.com/api/eventmaster</string>
+    <!-- Strings related to API -->
 </resources>
